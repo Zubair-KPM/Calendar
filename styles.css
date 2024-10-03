@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.calendar-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+#month-year {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+td:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #222;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #fff;
+}
+
+#event-title {
+    font-size: 1.5rem;
+}
+
+#event-description {
+    font-size: 1rem;
+}
+
+/* Highlight the current date */
+.today {
+    background-color: #ff6347; /* Tomato color for current date */
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.7);
+}
+
+.event-day {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* Style for live date and time */
+.live-date-time {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Highlight the current date */
+.today {
+    background-color: #ff6347; /* Tomato color for current date */
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.7);
+}
+
+.event-day {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+
+/* Style for live date and time */
+.live-date-time {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Style for remaining months section */
+.remaining-months {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.remaining-months ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.remaining-months ul li {
+    margin: 5px 0;
+}
+
+/* Highlight the current date */
+.today {
+    background-color: #ff6347; /* Tomato color for current date */
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.7);
+}
+
+.event-day {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+
+/* Month navigation arrows */
+.month-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.month-navigation button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.month-navigation button:hover {
+    background-color: #0056b3;
+}
+
+#month-year {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 20px;
+    flex: 1;
+    text-align: center;
+}
+
+/* Additional styles for remaining months and current day are the same as before */
